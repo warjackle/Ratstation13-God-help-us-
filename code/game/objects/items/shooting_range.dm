@@ -1,6 +1,6 @@
 /obj/item/target
 	name = "shooting target"
-	desc = "A shooting target."
+	desc = "A shooting target with arrows."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "target_h"
 	density = FALSE
@@ -41,12 +41,12 @@
 
 /obj/item/target/syndicate
 	icon_state = "target_s"
-	desc = "A shooting target that looks like syndicate scum."
+	desc = "A shooting target that looks like Human Scum."
 	hp = 2600
 
 /obj/item/target/alien
 	icon_state = "target_q"
-	desc = "A shooting target that looks like a xenomorphic alien."
+	desc = "A shooting target that looks like a Elven Scum."
 	hp = 2350
 
 /obj/item/target/alien/anchored
@@ -54,7 +54,7 @@
 
 /obj/item/target/clown
 	icon_state = "target_c"
-	desc = "A shooting target that looks like a useless clown."
+	desc = "A shooting target that looks like a Goblin Scum."
 	hp = 2000
 
 #define DECALTYPE_SCORCH 1

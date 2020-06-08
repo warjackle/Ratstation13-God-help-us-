@@ -51,8 +51,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	return SHAME
 
 /obj/item/claymore
-	name = "claymore"
-	desc = "What are you standing around staring at this for? Get to killing!"
+	name = "Zweihander"
+	desc = "For Karl Franz!"
 	icon_state = "claymore"
 	inhand_icon_state = "claymore"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
@@ -114,8 +114,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/claymore/highlander/pickup(mob/living/user)
 	. = ..()
-	to_chat(user, "<span class='notice'>The power of Scotland protects you! You are shielded from all stuns and knockdowns.</span>")
-	user.add_stun_absorption("highlander", INFINITY, 1, " is protected by the power of Scotland!", "The power of Scotland absorbs the stun!", " is protected by the power of Scotland!")
+	to_chat(user, "<span class='notice'>The power of Sigmar and Ulric protects you! You are shielded from all stuns and knockdowns.</span>")
+	user.add_stun_absorption("highlander", INFINITY, 1, " is protected by the power of Sigmar!", "The power of The Empire absorbs the stun!", " is protected by the power of The Empire!")
 	user.ignore_slowdown(HIGHLANDER)
 
 /obj/item/claymore/highlander/dropped(mob/living/user)
@@ -204,7 +204,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	playsound(user, 'sound/items/screwdriver2.ogg', 50, TRUE)
 
 /obj/item/katana
-	name = "katana"
+	name = "Nippon Blade"
 	desc = "Woefully underpowered in D20."
 	icon_state = "katana"
 	inhand_icon_state = "katana"
@@ -283,7 +283,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star
 	name = "throwing star"
-	desc = "An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts."
+	desc = "An Nippon Throwing weapon, due to its ease of lodging itself into its victim's body parts."
 	icon_state = "throwingstar"
 	inhand_icon_state = "eshield0"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
@@ -301,13 +301,13 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/throwing_star/stamina
 	name = "shock throwing star"
-	desc = "An aerodynamic disc designed to cause excruciating pain when stuck inside fleeing targets, hopefully without causing fatal harm."
+	desc = "An aerodynamic disc designed to cause excruciating pain when stuck inside fleeing targets, hopefully with causing fatal harm."
 	throwforce = 5
 	embedding = list("pain_chance" = 5, "embed_chance" = 100, "fall_chance" = 0, "jostle_chance" = 10, "pain_stam_pct" = 0.8, "jostle_pain_mult" = 3)
 
 /obj/item/throwing_star/toy
 	name = "toy throwing star"
-	desc = "An aerodynamic disc strapped with adhesive for sticking to people, good for playing pranks and getting yourself killed by security."
+	desc = "An aerodynamic disc strapped with adhesive for sticking to people, good for playing pranks and getting yourself killed by people."
 	sharpness = IS_BLUNT
 	force = 0
 	throwforce = 0
@@ -325,7 +325,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	embedding = list("pain_mult" = 8, "embed_chance" = 100, "fall_chance" = 0, "impact_pain_mult" = 15) //55 damage+embed on hit
 
 /obj/item/switchblade
-	name = "switchblade"
+	name = "Thieve's knife"
 	icon_state = "switchblade"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
@@ -388,7 +388,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/cane
 	name = "cane"
-	desc = "A cane used by a true gentleman. Or a clown."
+	desc = "A cane used by a true gentleman. Or a human."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "cane"
 	inhand_icon_state = "stick"
@@ -402,7 +402,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/staff
 	name = "wizard staff"
-	desc = "Apparently a staff used by the wizard."
+	desc = "Apparently a staff used by a wizard."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "staff"
 	lefthand_file = 'icons/mob/inhands/weapons/staves_lefthand.dmi'
@@ -418,7 +418,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/staff/broom
 	name = "broom"
-	desc = "Used for sweeping, and flying into the night while cackling. Black cat not included."
+	desc = "Used for sweeping, and flying into the Morrslib while cackling. Black cat not included."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "broom"
 	resistance_flags = FLAMMABLE
@@ -439,7 +439,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/ectoplasm
 	name = "ectoplasm"
-	desc = "Spooky."
+	desc = "The arcane winds sneezed."
 	gender = PLURAL
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "ectoplasm"
@@ -453,8 +453,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	icon_state = "angelplasm"
 
 /obj/item/mounted_chainsaw
-	name = "mounted chainsaw"
-	desc = "A chainsaw that has replaced your arm."
+	name = "Skaven mounted chainsaw"
+	desc = "A chainsaw that has replaced your arm VERMINTIDE CITY WIDE."
 	icon_state = "chainsaw_on"
 	inhand_icon_state = "mounted_chainsaw"
 	lefthand_file = 'icons/mob/inhands/weapons/chainsaw_lefthand.dmi'
@@ -505,14 +505,14 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	addtimer(CALLBACK(src, /datum.proc/_AddComponent, list(/datum/component/beauty, 1000)), 0)
 
 /obj/item/statuebust/hippocratic
-	name = "hippocrates bust"
-	desc = "A bust of the famous Greek physician Hippocrates of Kos, often referred to as the father of western medicine."
+	name = "Shallya's bust"
+	desc = "If you grab it, she'll hate you.."
 	icon_state = "hippocratic"
 	impressiveness = 50
 
 /obj/item/tailclub
 	name = "tail club"
-	desc = "For the beating to death of lizards with their own tails."
+	desc = "For the beating to death of Wyverns with their own tail."
 	icon_state = "tailclub"
 	force = 14
 	throwforce = 1 // why are you throwing a club do you even weapon
@@ -522,7 +522,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/chainofcommand/tailwhip
 	name = "liz o' nine tails"
-	desc = "A whip fashioned from the severed tails of lizards."
+	desc = "A whip fashioned from the severed tails of Wyverns."
 	icon_state = "tailwhip"
 	inhand_icon_state = "tailwhip"
 	item_flags = NONE
@@ -552,15 +552,15 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/melee/skateboard/pro
 	name = "skateboard"
-	desc = "A RaDSTORMz brand professional skateboard. It looks sturdy and well made."
+	desc = "A Morr brand professional skateboard. It looks sturdy and well made."
 	icon_state = "skateboard2"
 	inhand_icon_state = "skateboard2"
 	board_item_type = /obj/vehicle/ridden/scooter/skateboard/pro
 	custom_premium_price = 500
 
 /obj/item/melee/skateboard/hoverboard
-	name = "hoverboard"
-	desc = "A blast from the past, so retro!"
+	name = "Skyre hoverboard"
+	desc = "Rats can fly!"
 	icon_state = "hoverboard_red"
 	inhand_icon_state = "hoverboard_red"
 	board_item_type = /obj/vehicle/ridden/scooter/skateboard/hoverboard
@@ -778,7 +778,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/slapper
 	name = "slapper"
-	desc = "This is how real men fight."
+	desc = "This is how real rats fight."
 	icon_state = "latexballon"
 	inhand_icon_state = "nothing"
 	force = 0
@@ -829,7 +829,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/gohei
 	name = "gohei"
-	desc = "A wooden stick with white streamers at the end. Originally used by shrine maidens to purify things. Now used by the station's valued weeaboos."
+	desc = "A wooden stick with white streamers at the end. Originally used by Nippon's maidens, now used by you.."
 	force = 5
 	throwforce = 5
 	hitsound = "swing_hit"
@@ -845,8 +845,8 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	icon_state = "hfrequency0"
 	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
-	name = "vibro sword"
-	desc = "A potent weapon capable of cutting through nearly anything. Wielding it in two hands will allow you to deflect gunfire."
+	name = "Swordmaster of Hoeth's blade."
+	desc = "A potent weapon capable of cutting through nearly anything. Wielding it in two hands will allow you to deflect arrows."
 	armour_penetration = 100
 	block_chance = 40
 	force = 20

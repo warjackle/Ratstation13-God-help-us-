@@ -1,6 +1,6 @@
 /obj/item/pushbroom
 	name = "push broom"
-	desc = "This is my BROOMSTICK! It can be used manually or braced with two hands to sweep items as you move. It has a telescopic handle for compact storage."
+	desc = "This is my BROOMSTICK! It can be used manually or braced with two hands to sweep items as you move. Luckily for you this broom also carries a dark secret, using the very latest in the arcane, it can shrink. Why would tit be able to do that? Stop asking questions."
 	icon = 'icons/obj/janitor.dmi'
 	icon_state = "broom0"
 	lefthand_file = 'icons/mob/inhands/equipment/custodial_lefthand.dmi'

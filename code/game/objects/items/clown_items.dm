@@ -12,7 +12,7 @@
 
 /obj/item/soap
 	name = "soap"
-	desc = "A cheap bar of soap. Doesn't smell."
+	desc = "A cheap bar of animal fat. Doesn't smell."
 	gender = PLURAL
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "soap"
@@ -52,7 +52,7 @@
 	. += "<span class='notice'>[msg]</span>"
 
 /obj/item/soap/nanotrasen
-	desc = "A heavy duty bar of Nanotrasen brand soap. Smells of plasma."
+	desc = "A heavy duty bar of animal fat soap. Smells of death."
 	grind_results = list(/datum/reagent/toxin/plasma = 10, /datum/reagent/lye = 10)
 	icon_state = "soapnt"
 	cleanspeed = 28 //janitor gets this
@@ -64,7 +64,7 @@
 	cleanspeed = 30 // faster to reward chemists for going to the effort
 
 /obj/item/soap/deluxe
-	desc = "A deluxe Waffle Co. brand bar of soap. Smells of high-class luxury."
+	desc = "A deluxe bar of soap. Smells of high-class luxury."
 	icon_state = "soapdeluxe"
 	cleanspeed = 20 //captain gets one of these
 
@@ -75,7 +75,7 @@
 
 /obj/item/soap/omega
 	name = "omega soap"
-	desc = "The most advanced soap known to mankind."
+	desc = "The most advanced soap known to lizardkind."
 	icon_state = "soapomega"
 	cleanspeed = 3 //Only the truest of mind soul and body get one of these
 	uses = 301
@@ -93,7 +93,7 @@
 
 /obj/item/soap/suicide_act(mob/user)
 	user.say(";FFFFFFFFFFFFFFFFUUUUUUUDGE!!", forced="soap suicide")
-	user.visible_message("<span class='suicide'>[user] lifts [src] to [user.p_their()] mouth and gnaws on it furiously, producing a thick froth! [user.p_they(TRUE)]'ll never get that BB gun now!</span>")
+	user.visible_message("<span class='suicide'>[user] lifts [src] to [user.p_their()] mouth and gnaws on it furiously, producing a thick froth! [user.p_they(TRUE)]'ll never get that gun now!</span>")
 	new /obj/effect/particle_effect/foam(loc)
 	return (TOXLOSS)
 
@@ -159,8 +159,8 @@
  */
 
 /obj/item/bikehorn
-	name = "bike horn"
-	desc = "A horn off of a bicycle."
+	name = "A horn"
+	desc = "To toot."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "bike_horn"
 	inhand_icon_state = "bike_horn"

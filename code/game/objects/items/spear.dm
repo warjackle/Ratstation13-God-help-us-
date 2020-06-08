@@ -3,8 +3,8 @@
 	icon_state = "spearglass0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
-	name = "spear"
-	desc = "A haphazardly-constructed yet still deadly weapon of ancient design."
+	name = "Skaven spear"
+	desc = "A haphazardly-constructed yet deadly design."
 	force = 10
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
@@ -18,7 +18,7 @@
 	sharpness = IS_SHARP
 	max_integrity = 200
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
-	var/war_cry = "AAAAARGH!!!"
+	var/war_cry = "DIE-DIE!!!"
 	var/icon_prefix = "spearglass"
 
 /obj/item/spear/ComponentInitialize()
@@ -45,7 +45,7 @@
 	..()
 
 /obj/item/spear/explosive
-	name = "explosive lance"
+	name = "Skaven explosive lance"
 	var/obj/item/grenade/explosive = null
 	var/wielded = FALSE // track wielded status on item
 
@@ -127,8 +127,8 @@
 
 //GREY TIDE
 /obj/item/spear/grey_tide
-	name = "\improper Grey Tide"
-	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among Nanotrasen military forces."
+	name = "\improper Morr Spear"
+	desc = "Skaven Morr Spear."
 	attack_verb = list("gored")
 	force=15
 
@@ -157,7 +157,7 @@
 /obj/item/spear/bonespear	//Blatant imitation of spear, but made out of bone. Not valid for explosive modification.
 	icon_state = "bone_spear0"
 	name = "bone spear"
-	desc = "A haphazardly-constructed yet still deadly weapon. The pinnacle of modern technology."
+	desc = "A haphazardly-constructed yet still deadly weapon."
 	force = 12
 	throwforce = 22
 	armour_penetration = 15				//Enhanced armor piercing

@@ -9,7 +9,7 @@
 	return TRUE
 
 /obj/item/shield/riot
-	name = "riot shield"
+	name = "Steel shield"
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
 	icon_state = "riot"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
@@ -81,8 +81,8 @@
 	return ..()
 
 /obj/item/shield/riot/roman
-	name = "\improper Roman shield"
-	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>."
+	name = "\improper Tower shield"
+	desc = "Bears an inscription on the inside: <i>\"Kaiser Gesegnet\"</i>."  //"Emperor Blessed" In german/reikspiel
 	icon_state = "roman_shield"
 	inhand_icon_state = "roman_shield"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
@@ -92,7 +92,7 @@
 	max_integrity = 65
 
 /obj/item/shield/riot/roman/fake
-	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>. It appears to be a bit flimsy."
+	desc = "Bears an inscription on the inside: <i>\"Kaiser Gesegnet\"</i>. It appears to be a bit flimsy."
 	block_chance = 0
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 30
@@ -103,7 +103,7 @@
 
 /obj/item/shield/riot/buckler
 	name = "wooden buckler"
-	desc = "A medieval wooden buckler."
+	desc = "A wooden buckler."
 	icon_state = "buckler"
 	inhand_icon_state = "buckler"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
@@ -121,7 +121,7 @@
 
 /obj/item/shield/riot/flash
 	name = "strobe shield"
-	desc = "A shield with a built in, high intensity light capable of blinding and disorienting suspects. Takes regular handheld flashes as bulbs."
+	desc = "A shield with a built in, high intensity light capable of blinding and disorienting suspects. Thanks Skrye."
 	icon_state = "flashshield"
 	inhand_icon_state = "flashshield"
 	var/obj/item/assembly/flash/handheld/embedded_flash

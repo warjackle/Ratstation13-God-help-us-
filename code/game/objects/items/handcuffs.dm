@@ -21,8 +21,8 @@
 //Handcuffs
 
 /obj/item/restraints/handcuffs
-	name = "handcuffs"
-	desc = "Use this to keep prisoners in line."
+	name = "Skaven Restraints"
+	desc = "Use this to keep Slave-Things in line."
 	gender = PLURAL
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "handcuff"
@@ -202,8 +202,8 @@
 //Legcuffs
 
 /obj/item/restraints/legcuffs
-	name = "leg cuffs"
-	desc = "Use this to keep prisoners in line."
+	name = "Skaven leg restraints"
+	desc = "Use this to keep slave-things in line."
 	gender = PLURAL
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "handcuff"
@@ -311,7 +311,7 @@
 	breakouttime = 20 // Cyborgs shouldn't have a strong restraint
 
 /obj/item/restraints/legcuffs/bola
-	name = "bola"
+	name = "Skaven bola"
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
 	icon_state = "bola"
 	inhand_icon_state = "bola"
@@ -350,7 +350,7 @@
 		playsound(src, 'sound/effects/snap.ogg', 50, TRUE)
 
 /obj/item/restraints/legcuffs/bola/tactical//traitor variant
-	name = "reinforced bola"
+	name = "Skaven reinforced bola"
 	desc = "A strong bola, made with a long steel chain. It looks heavy, enough so that it could trip somebody."
 	icon_state = "bola_r"
 	inhand_icon_state = "bola_r"

@@ -4,7 +4,7 @@
 #define PCANNON_FIFO 3
 /obj/item/pneumatic_cannon
 	name = "pneumatic cannon"
-	desc = "A gas-powered cannon that can fire any object loaded into it."
+	desc = "A warpstone-powered cannon that can fire any object loaded into it."
 	w_class = WEIGHT_CLASS_BULKY
 	force = 8 //Very heavy
 	attack_verb = list("bludgeoned", "smashed", "beaten")
@@ -231,7 +231,7 @@
 
 /obj/item/pneumatic_cannon/ghetto //Obtainable by improvised methods; more gas per use, less capacity
 	name = "improvised pneumatic cannon"
-	desc = "A gas-powered, object-firing cannon made out of common parts."
+	desc = "A warpstone, object-firing cannon made out of common parts."
 	force = 5
 	maxWeightClass = 10
 	gasPerThrow = 5
@@ -304,8 +304,8 @@
 	charge_ticks = 2		//4 second/pie
 
 /obj/item/pneumatic_cannon/speargun
-	name = "kinetic speargun"
-	desc = "A weapon favored by carp hunters. Fires specialized spears using kinetic energy."
+	name = "Skaven speargun"
+	desc = "A weapon favored by hunters. Fires specialized spears using Warpstone energy."
 	icon = 'icons/obj/guns/projectile.dmi'
 	icon_state = "speargun"
 	inhand_icon_state = "speargun"
@@ -327,7 +327,7 @@
 
 /obj/item/storage/backpack/magspear_quiver
 	name = "quiver"
-	desc = "A quiver for holding magspears."
+	desc = "A quiver for holding speargun pears."
 	icon_state = "quiver"
 	inhand_icon_state = "quiver"
 

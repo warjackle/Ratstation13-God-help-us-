@@ -1,8 +1,7 @@
 #define CANDLE_LUMINOSITY	2
 /obj/item/candle
 	name = "red candle"
-	desc = "In Greek myth, Prometheus stole fire from the Gods and gave it to \
-		humankind. The jewelry he kept for himself."
+	desc = "Made from red wax, burns very sweetly for some reason."
 	icon = 'icons/obj/candle.dmi'
 	icon_state = "candle1"
 	inhand_icon_state = "candle1"

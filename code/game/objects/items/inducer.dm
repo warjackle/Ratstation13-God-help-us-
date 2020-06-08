@@ -1,6 +1,6 @@
 /obj/item/inducer
 	name = "inducer"
-	desc = "A tool for inductively charging internal power cells."
+	desc = "A tool for inductively charging internal warp-power cells."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "inducer-engi"
 	inhand_icon_state = "inducer-engi"
@@ -51,11 +51,11 @@
 		return TRUE
 
 	if(!cell)
-		to_chat(user, "<span class='warning'>[src] doesn't have a power cell installed!</span>")
+		to_chat(user, "<span class='warning'>[src] doesn't have a warp-power cell installed!</span>")
 		return TRUE
 
 	if(!cell.charge)
-		to_chat(user, "<span class='warning'>[src]'s battery is dead!</span>")
+		to_chat(user, "<span class='warning'>[src]'s warp-battery is dead!</span>")
 		return TRUE
 	return FALSE
 
@@ -64,12 +64,12 @@
 	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		W.play_tool_sound(src)
 		if(!opened)
-			to_chat(user, "<span class='notice'>You unscrew the battery compartment.</span>")
+			to_chat(user, "<span class='notice'>You unscrew the warp-battery compartment.</span>")
 			opened = TRUE
 			update_icon()
 			return
 		else
-			to_chat(user, "<span class='notice'>You close the battery compartment.</span>")
+			to_chat(user, "<span class='notice'>You close the warp-battery compartment.</span>")
 			opened = FALSE
 			update_icon()
 			return
@@ -176,7 +176,7 @@
 /obj/item/inducer/sci
 	icon_state = "inducer-sci"
 	inhand_icon_state = "inducer-sci"
-	desc = "A tool for inductively charging internal power cells. This one has a science color scheme, and is less potent than its engineering counterpart."
+	desc = "A tool for inductively charging internal warp-power cells. This one has a Skrye color scheme."
 	cell_type = null
 	powertransfer = 500
 	opened = TRUE
@@ -188,6 +188,6 @@
 /obj/item/inducer/syndicate
 	icon_state = "inducer-syndi"
 	inhand_icon_state = "inducer-syndi"
-	desc = "A tool for inductively charging internal power cells. This one has a suspicious colour scheme, and seems to be rigged to transfer charge at a much faster rate."
+	desc = "A tool for inductively charging internal warp-power cells. This one has a suspicious colour scheme, and seems to be rigged to transfer charge at a much faster rate."
 	powertransfer = 2000
 	cell_type = /obj/item/stock_parts/cell/super

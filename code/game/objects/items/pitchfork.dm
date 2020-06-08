@@ -37,7 +37,7 @@
 
 /obj/item/pitchfork/demonic
 	name = "demonic pitchfork"
-	desc = "A red pitchfork, it looks like the work of the devil."
+	desc = "A red pitchfork, it looks like the work of the dark gods."
 	force = 19
 	throwforce = 24
 

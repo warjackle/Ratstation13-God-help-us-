@@ -1,6 +1,6 @@
 /obj/item/banner
-	name = "banner"
-	desc = "A banner with Nanotrasen's logo on it."
+	name = "Skaven banner"
+	desc = "A banner with Skaven's logo on it."
 	icon = 'icons/obj/banner.dmi'
 	icon_state = "banner"
 	inhand_icon_state = "banner"
@@ -75,8 +75,8 @@
 	return
 
 /obj/item/banner/security
-	name = "securistan banner"
-	desc = "The banner of Securistan, ruling the station with an iron fist."
+	name = "Morr banner"
+	desc = "The banner of Morr Clan, ruling the City with an iron fist."
 	icon_state = "banner_security"
 	inhand_icon_state = "banner_security"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
@@ -88,7 +88,7 @@
 	inspiration_available = FALSE
 
 /datum/crafting_recipe/security_banner
-	name = "Securistan Banner"
+	name = "Morr Banner"
 	result = /obj/item/banner/security/mundane
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -96,14 +96,14 @@
 	category = CAT_MISC
 
 /obj/item/banner/medical
-	name = "meditopia banner"
-	desc = "The banner of Meditopia, generous benefactors that cure wounds and shelter the weak."
+	name = "Pestilence banner"
+	desc = "The banner of Clan Pestilence, the plague bearing and virile clan."
 	icon_state = "banner_medical"
 	inhand_icon_state = "banner_medical"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
 	job_loyalties = list("Medical Doctor", "Chemist", "Virologist", "Chief Medical Officer")
-	warcry = "No wounds cannot be healed!"
+	warcry = "Plague for all-all!"
 
 /obj/item/banner/medical/mundane
 	inspiration_available = FALSE
@@ -112,7 +112,7 @@
 	return H.stat //Meditopia is moved to help those in need
 
 /datum/crafting_recipe/medical_banner
-	name = "Meditopia Banner"
+	name = "Pestilence Banner"
 	result = /obj/item/banner/medical/mundane
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -125,14 +125,14 @@
 	H.reagents.add_reagent(/datum/reagent/medicine/inaprovaline, 5)
 
 /obj/item/banner/science
-	name = "sciencia banner"
-	desc = "The banner of Sciencia, bold and daring thaumaturges and researchers that take the path less traveled."
+	name = "Scrye banner"
+	desc = "The banner of Clan Scrye, dealing with warpstone in neverbefore seen ways."
 	icon_state = "banner_science"
 	inhand_icon_state = "banner_science"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
 	job_loyalties = list("Scientist", "Roboticist", "Research Director", "Geneticist",)
-	warcry = "For Cuban Pete!"
+	warcry = "WARPSTONE BULLETS FOR ALL!"
 
 /obj/item/banner/science/mundane
 	inspiration_available = FALSE
@@ -141,7 +141,7 @@
 	return H.on_fire //Sciencia is pleased by dedication to the art of Toxins
 
 /datum/crafting_recipe/science_banner
-	name = "Sciencia Banner"
+	name = "Scrye Banner"
 	result = /obj/item/banner/science/mundane
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -149,14 +149,14 @@
 	category = CAT_MISC
 
 /obj/item/banner/cargo
-	name = "cargonia banner"
-	desc = "The banner of the eternal Cargonia, with the mystical power of conjuring any object into existence."
+	name = "Moulder banner"
+	desc = "The banner of Clan Moulder, dedicated to changing things into things they like."
 	icon_state = "banner_cargo"
 	inhand_icon_state = "banner_cargo"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
 	job_loyalties = list("Cargo Technician", "Shaft Miner", "Quartermaster")
-	warcry = "Hail Cargonia!"
+	warcry = "Change them all!"
 
 /obj/item/banner/cargo/mundane
 	inspiration_available = FALSE
@@ -170,14 +170,14 @@
 	category = CAT_MISC
 
 /obj/item/banner/engineering
-	name = "engitopia banner"
-	desc = "The banner of Engitopia, wielders of limitless power."
+	name = "Empire banner"
+	desc = "The banner of the Empire, wielders of limitless power."
 	icon_state = "banner_engineering"
 	inhand_icon_state = "banner_engineering"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
 	job_loyalties = list("Station Engineer", "Atmospheric Technician", "Chief Engineer")
-	warcry = "All hail lord Singuloth!!"
+	warcry = "For the Emperor! For Franz!!"
 
 /obj/item/banner/engineering/mundane
 	inspiration_available = FALSE
@@ -186,7 +186,7 @@
 	H.radiation = 0
 
 /datum/crafting_recipe/engineering_banner
-	name = "Engitopia Banner"
+	name = "Empire Banner"
 	result = /obj/item/banner/engineering/mundane
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,
@@ -194,11 +194,11 @@
 	category = CAT_MISC
 
 /obj/item/banner/command
-	name = "command banner"
-	desc = "The banner of Command, a staunch and ancient line of bueraucratic kings and queens."
+	name = "Clan-Head banner"
+	desc = "The banner of Command, the very best of the skaven elite."
 	//No icon state here since the default one is the NT banner
 	job_loyalties = list("Captain", "Head of Personnel", "Chief Engineer", "Head of Security", "Research Director", "Chief Medical Officer")
-	warcry = "Hail Nanotrasen!"
+	warcry = "FOR THE GREAT HORNED RAT!"
 
 /obj/item/banner/command/mundane
 	inspiration_available = FALSE
@@ -207,7 +207,7 @@
 	return HAS_TRAIT(H, TRAIT_MINDSHIELD) //Command is stalwart but rewards their allies.
 
 /datum/crafting_recipe/command_banner
-	name = "Command Banner"
+	name = "Clan-Head Banner"
 	result = /obj/item/banner/command/mundane
 	time = 40
 	reqs = list(/obj/item/stack/rods = 2,

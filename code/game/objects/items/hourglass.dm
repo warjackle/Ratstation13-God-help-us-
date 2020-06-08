@@ -2,7 +2,7 @@
 
 /obj/item/hourglass
 	name = "hourglass"
-	desc = "Nanotrasen patented gravity invariant hourglass. Guaranteed to flow perfectly under any conditions."
+	desc = "A wooden frame with sand slowly falling into place."
 	var/obj/effect/countdown/hourglass/countdown
 	var/time = 1 MINUTES
 	var/finish_time //So countdown doesn't need to fiddle with timers

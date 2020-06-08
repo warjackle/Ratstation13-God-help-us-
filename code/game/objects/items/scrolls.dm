@@ -1,6 +1,6 @@
 /obj/item/teleportation_scroll
 	name = "scroll of teleportation"
-	desc = "A scroll for moving around."
+	desc = "A scroll for moving around through the winds of magic."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "scroll"
 	var/uses = 4
@@ -23,7 +23,7 @@
 	dat += "<HR>"
 	dat += "<B>Four uses, use them wisely:</B><BR>"
 	dat += "<A href='byond://?src=[REF(src)];spell_teleport=1'>Teleport</A><BR>"
-	dat += "Kind regards,<br>Wizards Federation<br><br>P.S. Don't forget to bring your gear, you'll need it to cast most spells.<HR>"
+	dat += "Kind regards,<br>Wizards Colleges<br><br>P.S. Don't forget to bring your gear, you'll need it to cast most spells.<HR>"
 	user << browse(dat, "window=scroll")
 	onclose(user, "scroll")
 	return

@@ -1,6 +1,6 @@
 /obj/item/singularityhammer
-	name = "singularity hammer"
-	desc = "The pinnacle of close combat technology, the hammer harnesses the power of a miniaturized singularity to deal crushing blows."
+	name = "Sigmars hammer"
+	desc = "A replica of Sigmar's own hammer, it glows softly golden and you quite believe it can fell gods."
 	icon_state = "singularity_hammer0"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
@@ -79,8 +79,8 @@
 			addtimer(CALLBACK(src, .proc/recharge), 100)
 
 /obj/item/mjollnir
-	name = "Mjolnir"
-	desc = "A weapon worthy of a god, able to strike with the force of a lightning bolt. It crackles with barely contained energy."
+	name = "Ulrics Hammer"
+	desc = "A weapon worthy of a berserking god, able to strike with the all of his rage."
 	icon_state = "mjollnir0"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'

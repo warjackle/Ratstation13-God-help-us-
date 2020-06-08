@@ -100,8 +100,8 @@
 		..()
 
 /obj/item/razor
-	name = "electric razor"
-	desc = "The latest and greatest power razor born from the science of shaving."
+	name = "razor"
+	desc = "The latest and greatest razor born from Nuln."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "razor"
 	flags_1 = CONDUCT_1

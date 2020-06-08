@@ -1,11 +1,11 @@
 #define STATION_RENAME_TIME_LIMIT 3000
 
 /obj/item/station_charter
-	name = "station charter"
+	name = "City charter"
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "scroll2"
-	desc = "An official document entrusting the governance of the station \
-		and surrounding space to the Captain."
+	desc = "An official document entrusting the governance of the City \
+		and surrounding space to the Clan Heads."
 	var/used = FALSE
 	var/name_type = "station"
 
@@ -31,10 +31,10 @@
 		to_chat(user, "<span class='warning'>The [name_type] has already been named!</span>")
 		return
 	if(!ignores_timeout && (world.time-SSticker.round_start_time > STATION_RENAME_TIME_LIMIT)) //5 minutes
-		to_chat(user, "<span class='warning'>The crew has already settled into the shift. It probably wouldn't be good to rename the [name_type] right now.</span>")
+		to_chat(user, "<span class='warning'>The skaven has already settled into the shift. It probably wouldn't be good to rename the [name_type] right now.</span>")
 		return
 	if(response_timer_id)
-		to_chat(user, "<span class='warning'>You're still waiting for approval from your employers about your proposed name change, it'd be best to wait for now.</span>")
+		to_chat(user, "<span class='warning'>You're still waiting for approval from the other clans about your proposed name change, it'd be best to wait for now.</span>")
 		return
 
 	var/new_name = stripped_input(user, message="What do you want to name \
@@ -43,12 +43,12 @@
 		will automatically be accepted.", max_length=MAX_CHARTER_LEN)
 
 	if(response_timer_id)
-		to_chat(user, "<span class='warning'>You're still waiting for approval from your employers about your proposed name change, it'd be best to wait for now.</span>")
+		to_chat(user, "<span class='warning'>You're still waiting for approval from the other clans about your proposed name change, it'd be best to wait for now.</span>")
 		return
 
 	if(!new_name)
 		return
-	log_game("[key_name(user)] has proposed to name the station as \
+	log_game("[key_name(user)] has proposed to name the city as \
 		[new_name]")
 
 	if(standard_station_regex.Find(new_name))
@@ -69,7 +69,7 @@
 	var/turf/T = get_turf(src)
 	T.visible_message("<span class='warning'>The proposed changes disappear \
 		from [src]; it looks like they've been rejected.</span>")
-	var/m = "[key_name(user)] has rejected the proposed station name."
+	var/m = "[key_name(user)] has rejected the proposed city name."
 
 	message_admins(m)
 	log_admin(m)
@@ -79,8 +79,8 @@
 
 /obj/item/station_charter/proc/rename_station(designation, uname, ureal_name, ukey)
 	set_station_name(designation)
-	minor_announce("[ureal_name] has designated your station as [station_name()]", "Captain's Charter", 0)
-	log_game("[ukey] has renamed the station as [station_name()].")
+	minor_announce("[ureal_name] has designated your city as [station_name()]", "Clan Head's Charter", 0)
+	log_game("[ukey] has renamed the city as [station_name()].")
 
 	name = "station charter for [station_name()]"
 	desc = "An official document entrusting the governance of \
@@ -95,23 +95,23 @@
 
 
 /obj/item/station_charter/flag
-	name = "\improper Nanotrasen banner"
+	name = "\improper Skaven banner"
 	icon = 'icons/obj/banner.dmi'
 	name_type = "planet"
 	icon_state = "banner"
 	inhand_icon_state = "banner"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
-	desc = "A cunning device used to claim ownership of planets."
+	desc = "A cunning device used to claim ownership of locations."
 	w_class = 5
 	force = 15
 
 /obj/item/station_charter/flag/rename_station(designation, uname, ureal_name, ukey)
 	set_station_name(designation)
-	minor_announce("[ureal_name] has designated the planet as [station_name()]", "Captain's Banner", 0)
+	minor_announce("[ureal_name] has designated the planet as [station_name()]", "Clan Head's Banner", 0)
 	log_game("[ukey] has renamed the planet as [station_name()].")
 	name = "banner of [station_name()]"
-	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [station_name()] has been claimed by Captain [uname] in the name of the company."
+	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [station_name()] has been claimed by Clan Head [uname] in the name of Skavenblight."
 	SSblackbox.record_feedback("text", "station_renames", 1, "[station_name()]")
 	if(!unlimited_uses)
 		used = TRUE

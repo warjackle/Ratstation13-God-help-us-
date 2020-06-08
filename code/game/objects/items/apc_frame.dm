@@ -81,8 +81,8 @@
 
 // APC HULL
 /obj/item/wallframe/apc
-	name = "\improper APC frame"
-	desc = "Used for repairing or building APCs."
+	name = "\improper AWPC frame"
+	desc = "Used for repairing or building AWPCs-or Area Warp-power Controllers."
 	icon_state = "apc"
 	result_path = /obj/machinery/power/apc
 	inverse = 1
@@ -94,7 +94,7 @@
 	var/turf/T = get_turf(on_wall) //the user is not where it needs to be.
 	var/area/A = get_area(user)
 	if(A.get_apc())
-		to_chat(user, "<span class='warning'>This area already has an APC!</span>")
+		to_chat(user, "<span class='warning'>This area already has an AWPC!</span>")
 		return //only one APC per area
 	if(!A.requires_power)
 		to_chat(user, "<span class='warning'>You cannot place [src] in this area!</span>")
@@ -105,7 +105,7 @@
 			return
 		else
 			new /obj/item/stack/cable_coil(T, 10)
-			to_chat(user, "<span class='notice'>You cut the cables and disassemble the unused power terminal.</span>")
+			to_chat(user, "<span class='notice'>You cut the cables and disassemble the unused warp-power terminal.</span>")
 			qdel(E)
 	return TRUE
 

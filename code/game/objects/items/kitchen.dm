@@ -16,8 +16,8 @@
 	righthand_file = 'icons/mob/inhands/equipment/kitchen_righthand.dmi'
 
 /obj/item/kitchen/fork
-	name = "fork"
-	desc = "Pointy."
+	name = "Skaven fork"
+	desc = "Three-pronged device used to pull food to your mouth. It tastes like rust. Maybe a stabbing impliment in a pinch."
 	icon_state = "fork"
 	force = 5
 	w_class = WEIGHT_CLASS_TINY
@@ -54,8 +54,8 @@
 		return ..()
 
 /obj/item/kitchen/fork/plastic
-	name = "plastic fork"
-	desc = "Really takes you back to highschool lunch."
+	name = "Dwarvish plastic fork"
+	desc = "You can see the gleam of industry off it ."
 	icon_state = "plastic_fork"
 	force = 0
 	w_class = WEIGHT_CLASS_TINY
@@ -71,10 +71,10 @@
 		qdel(src)
 
 /obj/item/kitchen/knife
-	name = "kitchen knife"
+	name = "Food-Knife"
 	icon_state = "knife"
 	inhand_icon_state = "knife"
-	desc = "A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come."
+	desc = "A blade used for food preperation by the grace of having a sharp edge that'll probably cause the food to get rust-sickness"
 	flags_1 = CONDUCT_1
 	force = 10
 	w_class = WEIGHT_CLASS_SMALL
@@ -105,10 +105,10 @@
 	return (BRUTELOSS)
 
 /obj/item/kitchen/knife/plastic
-	name = "plastic knife"
+	name = "Dwarvish plastic knife"
 	icon_state = "plastic_knife"
 	inhand_icon_state = "knife"
-	desc = "A very safe, barely sharp knife made of plastic. Good for cutting food and not much else."
+	desc = "Why would you make this."
 	force = 0
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0
@@ -127,7 +127,7 @@
 
 /obj/item/kitchen/knife/ritual
 	name = "ritual knife"
-	desc = "The unearthly energies that once powered this blade are now dormant."
+	desc = "A cold blade to the touch, that looks fiendishly evil. However the laughter of the god's have ceased for now.."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "render"
 	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
@@ -136,7 +136,7 @@
 
 /obj/item/kitchen/knife/bloodletter
 	name = "bloodletter"
-	desc = "An occult looking dagger that is cold to the touch. Somehow, the flawless orb on the pommel is made entirely of liquid blood."
+	desc = "An occult looking dagger that is cold to the touch. Somehow, the flawless orb on the pommel is made entirely of liquid, blood You swear you can hear laughter while touching it."
 	icon = 'icons/obj/ice_moon/artifacts.dmi'
 	icon_state = "bloodletter"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -160,7 +160,7 @@
 	name = "butcher's cleaver"
 	icon_state = "butch"
 	inhand_icon_state = "butch"
-	desc = "A huge thing used for chopping and chopping up meat. This includes clowns and clown by-products."
+	desc = "A huge thing used for chopping and chopping up meat. This includes living flesh and living flesh byproducts."
 	flags_1 = CONDUCT_1
 	force = 15
 	throwforce = 10
@@ -171,7 +171,7 @@
 
 /obj/item/kitchen/knife/hunting
 	name = "hunting knife"
-	desc = "Despite its name, it's mainly used for cutting meat from dead prey rather than actual hunting."
+	desc = "Used mainly for cleaning the kill."
 	inhand_icon_state = "huntingknife"
 	icon_state = "huntingknife"
 
@@ -179,9 +179,9 @@
 	AddComponent(/datum/component/butchering, 80 - force, 100, force + 10)
 
 /obj/item/kitchen/knife/combat
-	name = "combat knife"
+	name = "Military Dagger"
 	icon_state = "buckknife"
-	desc = "A military combat utility survival knife."
+	desc = "A proper steel blade without a hint of rust."
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
 	force = 20
 	throwforce = 20
@@ -189,10 +189,10 @@
 	bayonet = TRUE
 
 /obj/item/kitchen/knife/combat/survival
-	name = "survival knife"
+	name = "Skaven Tool-knife"
 	icon_state = "survivalknife"
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	desc = "A hunting grade survival knife."
+	desc = "A blade used mainly for cutting bits of wood and skin."
 	force = 15
 	throwforce = 15
 	bayonet = TRUE
@@ -210,10 +210,10 @@
 	custom_materials = null
 
 /obj/item/kitchen/knife/combat/cyborg
-	name = "cyborg knife"
+	name = "Implanted tool-blade"
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "knife_cyborg"
-	desc = "A cyborg-mounted plasteel knife. Extremely sharp and durable."
+	desc = "A steel blade implanted through warpstone use, it is warm to the touch."
 
 /obj/item/kitchen/knife/shiv
 	name = "glass shiv"
@@ -234,7 +234,7 @@
 	icon_state = "carrotshiv"
 	inhand_icon_state = "carrotshiv"
 	icon = 'icons/obj/kitchen.dmi'
-	desc = "Unlike other carrots, you should probably keep this far away from your eyes."
+	desc = "Unlike other carrots, you should deffinately keep this in someone else's eyes."
 	custom_materials = null
 
 /obj/item/kitchen/knife/shiv/carrot/suicide_act(mob/living/carbon/user)
@@ -242,8 +242,8 @@
 	return BRUTELOSS
 
 /obj/item/kitchen/rollingpin
-	name = "rolling pin"
-	desc = "Used to knock out the Bartender."
+	name = "Skaven rolling pin"
+	desc = "Used to knock out Rivals."
 	icon_state = "rolling_pin"
 	force = 8
 	throwforce = 5
@@ -260,7 +260,7 @@
 /* Trays  moved to /obj/item/storage/bag */
 
 /obj/item/kitchen/spoon/plastic
-	name = "plastic spoon"
+	name = "Dwarvish plastic spoon"
 	desc = "Just be careful your food doesn't melt the spoon first."
 	icon_state = "plastic_spoon"
 	force = 0

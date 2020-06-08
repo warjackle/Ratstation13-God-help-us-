@@ -89,7 +89,7 @@
 /obj/item/book/granter/action/origami
 	granted_action = /datum/action/innate/origami
 	name = "The Art of Origami"
-	desc = "A meticulously in-depth manual explaining the art of paper folding."
+	desc = "A meticulously in-depth manual explaining the art of paper folding from Nippon."
 	icon_state = "origamibook"
 	actionname = "origami"
 	oneuse = TRUE
@@ -164,16 +164,16 @@
 
 /obj/item/book/granter/spell/sacredflame
 	spell = /obj/effect/proc_holder/spell/targeted/sacred_flame
-	spellname = "sacred flame"
+	spellname = "sacrifing flame"
 	icon_state ="booksacredflame"
 	desc = "Become one with the flames that burn within... and invite others to do so as well."
-	remarks = list("Well, it's one way to stop an attacker...", "I'm gonna need some good gear to stop myself from burning to death...", "Keep a fire extinguisher handy, got it...", "I think I just burned my hand...", "Apply flame directly to chest for proper ignition...", "No pain, no gain...", "One with the flame...")
+	remarks = list("Well, it's one way to stop an attacker...", "I'm gonna need some good gear to stop myself from burning to death...", "Keep a way to put out fires handy, got it...", "I think I just burned my hand...", "Apply flame directly to chest for proper ignition...", "No pain, no gain...", "One with the flame...")
 
 /obj/item/book/granter/spell/smoke
 	spell = /obj/effect/proc_holder/spell/targeted/smoke
 	spellname = "smoke"
 	icon_state ="booksmoke"
-	desc = "This book is overflowing with the dank arts."
+	desc = "This book is overflowing with the Nippon's smoke summoning."
 	remarks = list("Smoke Bomb! Heh...", "Smoke bomb would do just fine too...", "Wait, there's a machine that does the same thing in chemistry?", "This book smells awful...", "Why all these weed jokes? Just tell me how to cast it...", "Wind will ruin the whole spell, good thing we're in space... Right?", "So this is how the spider clan does it...")
 
 /obj/item/book/granter/spell/smoke/lesser //Chaplain smoke book
@@ -238,7 +238,7 @@
 	spell = /obj/effect/proc_holder/spell/targeted/forcewall
 	spellname = "forcewall"
 	icon_state ="bookforcewall"
-	desc = "This book has a dedication to mimes everywhere inside the front cover."
+	desc = "This book has a dedication to Arcane Winds cover to cover."
 	remarks = list("I can go through the wall! Neat.", "Why are there so many mime references...?", "This would cause much grief in a hallway...", "This is some surprisingly strong magic to create a wall nobody can pass through...", "Why the dumb stance? It's just a flick of the hand...", "Why are the pages so hard to turn, is this even paper?", "I can't mo Oh, i'm fine...")
 
 /obj/item/book/granter/spell/forcewall/recoil(mob/living/user)
@@ -281,8 +281,8 @@
 	spell = /obj/effect/proc_holder/spell/targeted/charge
 	spellname = "charge"
 	icon_state ="bookcharge"
-	desc = "This book is made of 100% postconsumer wizard."
-	remarks = list("I feel ALIVE!", "I CAN TASTE THE MANA!", "What a RUSH!", "I'm FLYING through these pages!", "THIS GENIUS IS MAKING IT!", "This book is ACTION PAcKED!", "HE'S DONE IT", "LETS GOOOOOOOOOOOO")
+	desc = "This book is made of 100% wizard."
+	remarks = list("I feel ALIVE!", "I CAN TASTE THE WINDS!", "What a RUSH!", "I'm FLYING through these pages!", "THIS GENIUS IS MAKING IT!", "This book is ACTION PAcKED!", "HE'S DONE IT", "LETS GOOOOOOOOOOOO")
 
 /obj/item/book/granter/spell/charge/recoil(mob/user)
 	..()
@@ -293,7 +293,7 @@
 	spell = /obj/effect/proc_holder/spell/targeted/summonitem
 	spellname = "instant summons"
 	icon_state ="booksummons"
-	desc = "This book is bright and garish, very hard to miss."
+	desc = "This book is bright and garish, very hard to miss. Why do you hear laughter?"
 	remarks = list("I can't look away from the book!", "The words seem to pop around the page...", "I just need to focus on one item...", "Make sure to have a good grip on it when casting...", "Slow down, book. I still haven't finished this page...", "Sounds pretty great with some other magical artifacts...", "Magicians must love this one.")
 
 /obj/item/book/granter/spell/summonitem/recoil(mob/user)
@@ -342,7 +342,7 @@
 	martial = /datum/martial_art/cqc
 	name = "old manual"
 	martialname = "close quarters combat"
-	desc = "A small, black manual. There are drawn instructions of tactical hand-to-hand combat."
+	desc = "A small, black manual. There are drawn instructions of tactical Nippon combat."
 	greet = "<span class='boldannounce'>You've mastered the basics of CQC.</span>"
 	icon_state = "cqcmanual"
 	remarks = list("Kick... Slam...", "Lock... Kick...", "Strike their abdomen, neck and back for critical damage...", "Slam... Lock...", "I could probably combine this with some other martial arts!", "Words that kill...", "The last and final moment is yours...")
@@ -362,15 +362,15 @@
 
 /obj/item/book/granter/martial/carp
 	martial = /datum/martial_art/the_sleeping_carp
-	name = "mysterious scroll"
-	martialname = "sleeping carp"
-	desc = "A scroll filled with strange markings. It seems to be drawings of some sort of martial art."
-	greet = "<span class='sciradio'>You have learned the ancient martial art of the Sleeping Carp! Your hand-to-hand combat has become much more effective, and you are now able to deflect any projectiles \
-	directed toward you while in Throw Mode. Your body is also honed to protect you from damage and punctures, and even briefly survive space. \
+	name = "mysterious Elven scroll"
+	martialname = "Elven deflection"
+	desc = "A scroll filled with strange markings. It seems to be drawings of some sort of Elven martial art."
+	greet = "<span class='sciradio'>You have learned the ancient martial art of the Swordmasters of Hoeth! Your hand-to-hand combat has become much more effective, and you are now able to deflect any projectiles \
+	directed toward you while in Throw Mode. Your body is also honed to protect you from damage and punctures, and even briefly survive vaccum, whatever that means! \
 	However, you are also unable to use any ranged weaponry, and some medical supplies will prove useless to you. You can learn more about your newfound art by using the Recall Teachings verb in the Sleeping Carp tab.</span>"
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "scroll2"
-	remarks = list("Wait, a high protein diet is really all it takes to become bulletproof...?", "Overwhelming force, immovable object...", "Focus... And you'll be able to incapacitate any foe in seconds...", "I must pierce armor for maximum damage...", "I don't think this would combine with other martial arts...", "Become one with the carp...", "Glub...")
+	remarks = list("Wait, a high protein diet is really all it takes to become bulletproof...?", "Overwhelming force, immovable object...", "Focus... And you'll be able to incapacitate any foe in seconds...", "I must pierce armor for maximum damage...", "I don't think this would combine with other martial arts...", "Become one with the blade...", "Bloody knife'd ears...")
 
 /obj/item/book/granter/martial/carp/onlearned(mob/living/carbon/user)
 	..()
@@ -382,10 +382,10 @@
 /obj/item/book/granter/martial/plasma_fist
 	martial = /datum/martial_art/plasma_fist
 	name = "frayed scroll"
-	martialname = "plasma fist"
+	martialname = "Arcane fist"
 	desc = "An aged and frayed scrap of paper written in shifting runes. There are hand-drawn illustrations of pugilism."
 	greet = "<span class='boldannounce'>You have learned the ancient martial art of Plasma Fist. Your combos are extremely hard to pull off, but include some of the most deadly moves ever seen including \
-	the plasma fist, which when pulled off will make someone violently explode.</span>"
+	the Arcane fist, which when pulled off will make someone violently explode.</span>"
 	icon = 'icons/obj/wizard.dmi'
 	icon_state ="scroll2"
 	remarks = list("Balance...", "Power...", "Control...", "Mastery...", "Vigilance...", "Skill...")
@@ -418,7 +418,7 @@
 
 /obj/item/book/granter/crafting_recipe/cooking_sweets_101
 	name = "Cooking Desserts 101"
-	desc = "A cook book that teaches you some more of the newest desserts. AI approved, and a best seller on Honkplanet."
+	desc = "A cook book that teaches you some more of the newest desserts. Made by Halflings."
 	crafting_recipe_types = list(
 		/datum/crafting_recipe/food/mimetart,
 		/datum/crafting_recipe/food/berrytart,

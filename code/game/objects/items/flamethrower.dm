@@ -1,5 +1,5 @@
 /obj/item/flamethrower
-	name = "flamethrower"
+	name = "Warp-firethrower"
 	desc = "You are a firestarter!"
 	icon = 'icons/obj/flamethrower.dmi'
 	icon_state = "flamethrowerbase"
@@ -144,7 +144,7 @@
 	if(ptank && isliving(user) && user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 		user.put_in_hands(ptank)
 		ptank = null
-		to_chat(user, "<span class='notice'>You remove the plasma tank from [src]!</span>")
+		to_chat(user, "<span class='notice'>You remove the liquid warpstone tank from [src]!</span>")
 		update_icon()
 
 /obj/item/flamethrower/examine(mob/user)
@@ -154,7 +154,7 @@
 
 /obj/item/flamethrower/proc/toggle_igniter(mob/user)
 	if(!ptank)
-		to_chat(user, "<span class='notice'>Attach a plasma tank first!</span>")
+		to_chat(user, "<span class='notice'>Attach a liquid warpstone tank first!</span>")
 		return
 	if(!status)
 		to_chat(user, "<span class='notice'>Secure the igniter first!</span>")
@@ -166,7 +166,7 @@
 		playsound(loc, acti_sound, 50, TRUE)
 		START_PROCESSING(SSobj, src)
 		if(!warned_admins)
-			message_admins("[ADMIN_LOOKUPFLW(user)] has lit a flamethrower.")
+			message_admins("[ADMIN_LOOKUPFLW(user)] has lit a Warp-firethrower.")
 			warned_admins = TRUE
 	else
 		set_light(0)
