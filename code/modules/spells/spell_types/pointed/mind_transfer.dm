@@ -1,10 +1,10 @@
 /obj/effect/proc_holder/spell/pointed/mind_transfer
 	name = "Mind Transfer"
-	desc = "This spell allows the user to switch bodies with a target next to him."
+	desc = "This spell allows the user to switch bodies with a target next to him, a very dark wind spell."
 	school = "transmutation"
 	charge_max = 600
 	clothes_req = FALSE
-	invocation = "GIN'YU CAPAN"
+	invocation = "DARK ARTS BLESS ME!"
 	invocation_type = "whisper"
 	range = 1
 	cooldown_min = 200 //100 deciseconds reduction per rank

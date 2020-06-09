@@ -1,6 +1,6 @@
 /obj/structure/fireaxecabinet
-	name = "fire axe cabinet"
-	desc = "There is a small label that reads \"For Emergency use only\" along with details for safe use of the axe. As if."
+	name = "Morr weapon locker"
+	desc = "Seems to be space for only one weapon sadly."
 	icon = 'icons/obj/wallmounts.dmi'
 	icon_state = "fireaxe"
 	anchored = TRUE
@@ -112,7 +112,7 @@
 		if(fireaxe)
 			user.put_in_hands(fireaxe)
 			fireaxe = null
-			to_chat(user, "<span class='notice'>You take the fire axe from the [name].</span>")
+			to_chat(user, "<span class='notice'>You take the axe from the [name].</span>")
 			src.add_fingerprint(user)
 			update_icon()
 			return

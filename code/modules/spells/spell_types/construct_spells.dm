@@ -76,7 +76,7 @@
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone
 	name = "Summon Soulstone"
-	desc = "This spell reaches into Nar'Sie's realm, summoning one of the legendary fragments across time and space."
+	desc = "This spell reaches into The Dark Wind, summoning one of the legendary fragments across time and space."
 
 	school = "conjuration"
 	charge_max = 2400
@@ -142,7 +142,7 @@
 	jaunt_out_type = /obj/effect/temp_visual/dir_setting/wraith/out/angelic
 
 /obj/effect/proc_holder/spell/targeted/projectile/magic_missile/lesser
-	name = "Lesser Magic Missile"
+	name = "Lesser Magic Bolt"
 	desc = "This spell fires several, slow moving, magic projectiles at nearby targets."
 
 	school = "evocation"
@@ -236,7 +236,7 @@
 
 /obj/effect/proc_holder/spell/pointed/dominate
 	name = "Dominate"
-	desc = "This spell dominates the mind of a lesser creature to the will of Nar'Sie, allying it only to her direct followers."
+	desc = "This spell dominates the mind of a lesser creature to the will of The Dark Gods, allying it only to their direct followers."
 	charge_max = 600
 	range = 7
 	stat_allowed = FALSE

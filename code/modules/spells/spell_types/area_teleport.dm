@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/targeted/area_teleport
 	name = "Area teleport"
-	desc = "This spell teleports you to a type of area of your selection."
+	desc = "This spell teleports you to a type of area of your selection by ripping open the winds and stepping through."
 	nonabstract_req = TRUE
 
 	var/randomise_selection = FALSE //if it lets the usr choose the teleport loc or picks it from the list

@@ -6,7 +6,7 @@
 //trees
 /obj/structure/flora/tree
 	name = "tree"
-	desc = "A large tree."
+	desc = "A large eerie tree."
 	density = TRUE
 	pixel_x = -16
 	layer = FLY_LAYER
@@ -32,7 +32,7 @@
 
 /obj/structure/flora/stump
 	name = "stump"
-	desc = "This represents our promise to the crew, and the station itself, to cut down as many trees as possible." //running naked through the trees
+	desc = "A dead tree in Morrs garden." //running naked through the trees
 	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "tree_stump"
 	density = FALSE
@@ -40,7 +40,7 @@
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"
-	desc = "A coniferous pine tree."
+	desc = "Most commonly associated with the Elves."
 	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "pine_1"
 	var/list/icon_states = list("pine_1", "pine_2", "pine_3")
@@ -52,15 +52,15 @@
 		icon_state = pick(icon_states)
 
 /obj/structure/flora/tree/pine/xmas
-	name = "xmas tree"
-	desc = "A wondrous decorated Christmas tree."
+	name = "Mondstille tree"
+	desc = "A wondrous decorated Mondstille tree."
 	icon_state = "pine_c"
 	icon_states = null
 	flags_1 = NODECONSTRUCT_1 //protected by the christmas spirit
 
 /obj/structure/flora/tree/pine/xmas/presents
 	icon_state = "pinepresents"
-	desc = "A wondrous decorated Christmas tree. It has presents!"
+	desc = "A wondrous decorated Mondstille tree. It has presents!"
 	var/gift_type = /obj/item/a_gift/anything
 	var/unlimited = FALSE
 	var/static/list/took_presents //shared between all xmas trees
@@ -89,7 +89,7 @@
 	user.put_in_hands(G)
 
 /obj/structure/flora/tree/pine/xmas/presents/unlimited
-	desc = "A wonderous decorated Christmas tree. It has a seemly endless supply of presents!"
+	desc = "A wonderous decorated Mondstille tree. It has a seemly endless supply of presents!"
 	unlimited = TRUE
 
 /obj/structure/flora/tree/dead
@@ -111,7 +111,7 @@
 	name = "festivus pole"
 	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "festivus_pole"
-	desc = "During last year's Feats of Strength the Research Director was able to suplex this passing immobile rod into a planter."
+	desc = "During last year's Feats of Strength the a Khornate berserker got in, fifty dead."
 
 /obj/structure/festivus/anchored
 	name = "suplexed rod"
@@ -343,8 +343,8 @@
 
 
 /obj/item/kirbyplants/dead
-	name = "RD's potted plant"
-	desc = "A gift from the botanical staff, presented after the RD's reassignment. There's a tag on it that says \"Y'all come back now, y'hear?\"\nIt doesn't look very healthy..."
+	name = "Moulder's potted plant"
+	desc = "A gift from Clan Moulder Proper, presented after the head's arrival..."
 	icon_state = "plant-25"
 
 /obj/item/kirbyplants/photosynthetic
@@ -374,7 +374,7 @@
 
 /obj/structure/flora/rock
 	icon_state = "basalt"
-	desc = "A volcanic rock. Pioneers used to ride these babies for miles."
+	desc = "A volcanic rock. Reminds you of tales of the Waste."
 	icon = 'icons/obj/flora/rocks.dmi'
 	resistance_flags = FIRE_PROOF
 	density = TRUE
@@ -405,13 +405,13 @@
 
 /obj/structure/flora/rock/pile
 	icon_state = "lavarocks"
-	desc = "A pile of rocks."
+	desc = "A pile of rocks, fresh from the wastes."
 
 //Jungle grass
 
 /obj/structure/flora/grass/jungle
 	name = "jungle grass"
-	desc = "Thick alien flora."
+	desc = "Thick lustria flora."
 	icon = 'icons/obj/flora/jungleflora.dmi'
 	icon_state = "grassa"
 

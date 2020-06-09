@@ -1,6 +1,6 @@
 /obj/structure/sacrificealtar
 	name = "sacrificial altar"
-	desc = "An altar designed to perform blood sacrifice for a deity."
+	desc = "An altar designed to perform blood sacrifice for a deity of your choice."
 	icon = 'icons/obj/hand_of_god_structures.dmi'
 	icon_state = "sacrificealtar"
 	anchored = TRUE
@@ -22,7 +22,7 @@
 
 /obj/structure/healingfountain
 	name = "healing fountain"
-	desc = "A fountain containing the waters of life."
+	desc = "A fountain containing the waters of Athel Loren."
 	icon = 'icons/obj/hand_of_god_structures.dmi'
 	icon_state = "fountain"
 	anchored = TRUE

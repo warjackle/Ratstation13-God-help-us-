@@ -90,11 +90,11 @@
 
 /obj/effect/proc_holder/spell/aimed/lightningbolt
 	name = "Lightning Bolt"
-	desc = "Fire a lightning bolt at your foes! It will jump between targets, but can't knock them down."
+	desc = "Fire a lightning bolt at your foes! It will jump between targets, but can't knock them down, based Azyr, the blue wind, the lore of the heavens."
 	school = "evocation"
 	charge_max = 100
 	clothes_req = FALSE
-	invocation = "P'WAH, UNLIM'TED P'WAH"
+	invocation = "BY AZYR!"
 	invocation_type = "shout"
 	cooldown_min = 20
 	base_icon_state = "lightning"
@@ -108,11 +108,11 @@
 
 /obj/effect/proc_holder/spell/aimed/fireball
 	name = "Fireball"
-	desc = "This spell fires an explosive fireball at a target."
+	desc = "This spell fires an explosive fireball at a target. Naturally part of Aqshy, the red wind, the lore of fire"
 	school = "evocation"
 	charge_max = 60
 	clothes_req = FALSE
-	invocation = "ONI SOMA"
+	invocation = "I AM A LIVING FIREBALL"
 	invocation_type = "shout"
 	range = 20
 	cooldown_min = 20 //10 deciseconds reduction per rank
@@ -131,7 +131,7 @@
 
 /obj/effect/proc_holder/spell/aimed/spell_cards
 	name = "Spell Cards"
-	desc = "Blazing hot rapid-fire homing cards. Send your foes to the shadow realm with their mystical power!"
+	desc = "Blazing hot rapid-fire homing cards. Send your foes to the shadow realm with their mystical power! More of a general cardtrick then anything"
 	school = "evocation"
 	charge_max = 50
 	clothes_req = FALSE

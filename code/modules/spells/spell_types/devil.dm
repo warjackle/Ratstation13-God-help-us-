@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/targeted/conjure_item/summon_pitchfork
 	name = "Summon Pitchfork"
-	desc = "A devil's weapon of choice.  Use this to summon/unsummon your pitchfork."
+	desc = "A daemon's weapon of choice.  Use this to summon/unsummon your pitchfork."
 	invocation_type = "none"
 	include_user = TRUE
 	range = -1
@@ -22,9 +22,9 @@
 
 /obj/effect/proc_holder/spell/targeted/conjure_item/violin
 	item_type = /obj/item/instrument/violin/golden
-	desc = "A devil's instrument of choice.  Use this to summon/unsummon your golden violin."
+	desc = "A daemon's instrument of choice.  Use this to summon/unsummon your golden violin."
 	invocation_type = "whisper"
-	invocation = "I ain't had this much fun since Georgia."
+	invocation = "Slaanesh will love this one."
 	action_icon_state = "golden_violin"
 	name = "Summon golden violin"
 	action_icon = 'icons/mob/actions/actions_minor_antag.dmi'
@@ -32,7 +32,7 @@
 
 /obj/effect/proc_holder/spell/targeted/summon_contract
 	name = "Summon infernal contract"
-	desc = "Skip making a contract by hand, just do it by magic."
+	desc = "Skip making a contract by hand, just do it by magic, tzeentch's favorite."
 	invocation_type = "whisper"
 	invocation = "Just sign on the dotted line."
 	include_user = FALSE
@@ -203,7 +203,7 @@
 
 /obj/effect/proc_holder/spell/targeted/summon_dancefloor
 	name = "Summon Dancefloor"
-	desc = "When what a Devil really needs is funk."
+	desc = "When what a Daemon really needs is funk."
 	include_user = TRUE
 	range = -1
 	clothes_req = FALSE

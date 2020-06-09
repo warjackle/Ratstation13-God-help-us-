@@ -5,7 +5,7 @@
 
 /obj/structure/easel
 	name = "easel"
-	desc = "Only for the finest of art!"
+	desc = "Only for the finest of art! Made from real fur hair!"
 	icon = 'icons/obj/artstuff.dmi'
 	icon_state = "easel"
 	density = TRUE

@@ -1,5 +1,5 @@
 /obj/effect/proc_holder/spell/targeted/projectile/magic_missile
-	name = "Magic Missile"
+	name = "Magic Bolt"
 	desc = "This spell fires several, slow moving, magic projectiles at nearby targets."
 
 	school = "evocation"
@@ -15,7 +15,7 @@
 	sound = 'sound/magic/magic_missile.ogg'
 
 /obj/projectile/magic/spell/magic_missile
-	name = "magic missile"
+	name = "magic bolt"
 	icon_state = "magicm"
 	range = 20
 	speed = 5
@@ -38,13 +38,13 @@
 			return BULLET_ACT_BLOCK
 
 /obj/effect/proc_holder/spell/targeted/genetic/mutate
-	name = "Mutate"
+	name = "Tzeentch's Boon"
 	desc = "This spell causes you to turn into a hulk and gain laser vision for a short while."
 
 	school = "transmutation"
 	charge_max = 400
 	clothes_req = TRUE
-	invocation = "BIRUZ BENNAR"
+	invocation = "TZEENTCH'S BLESSING!"
 	invocation_type = "shout"
 	range = -1
 	include_user = TRUE
@@ -98,7 +98,7 @@
 	desc = "This spell disables all weapons, cameras and most other technology in range."
 	charge_max = 400
 	clothes_req = TRUE
-	invocation = "NEC CANTIO"
+	invocation = "CEASE WITCHERY"
 	invocation_type = "shout"
 	range = -1
 	include_user = TRUE
@@ -145,7 +145,7 @@
 	school = "abjuration"
 	charge_max = 600
 	clothes_req = TRUE
-	invocation = "SCYAR NILA"
+	invocation = "THE WINDS CARRY ME"
 	invocation_type = "shout"
 	range = -1
 	include_user = TRUE
@@ -169,7 +169,7 @@
 	desc = "This spell stops time for everyone except for you, allowing you to move freely while your enemies and even projectiles are frozen."
 	charge_max = 500
 	clothes_req = TRUE
-	invocation = "TOKI YO TOMARE"
+	invocation = "I AM THE NEW SUPREME PATRIARCH"
 	invocation_type = "shout"
 	range = 0
 	cooldown_min = 100
@@ -187,7 +187,7 @@
 	school = "conjuration"
 	charge_max = 1200
 	clothes_req = TRUE
-	invocation = "NOUK FHUNMM SACP RISSKA"
+	invocation = "LORE OF BEASTS, HEAR ME"
 	invocation_type = "shout"
 	range = 1
 
@@ -234,7 +234,7 @@
 	desc = "This spell throws everything around the user away."
 	charge_max = 400
 	clothes_req = TRUE
-	invocation = "GITTAH WEIGH"
+	invocation = "RAW ARCANE WINDS!"
 	invocation_type = "shout"
 	range = 5
 	cooldown_min = 150
@@ -310,7 +310,7 @@
 	desc = "Makes everyone around you more flammable, and lights yourself on fire."
 	charge_max = 60
 	clothes_req = FALSE
-	invocation = "FI'RAN DADISKO"
+	invocation = "THE FLAMES CALL TO ME"
 	invocation_type = "shout"
 	max_targets = 0
 	range = 6

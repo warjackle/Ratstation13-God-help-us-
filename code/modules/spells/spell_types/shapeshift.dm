@@ -1,13 +1,13 @@
 /obj/effect/proc_holder/spell/targeted/shapeshift
 	name = "Shapechange"
-	desc = "Take on the shape of another for a time to use their natural abilities. Once you've made your choice it cannot be changed."
+	desc = "Take on the shape of another for a time to use their natural abilities. Once you've made your choice it cannot be changed, a Ghur-brown wind spell/The lore of Beasts.."
 	clothes_req = FALSE
 	human_req = FALSE
 	charge_max = 200
 	cooldown_min = 50
 	range = -1
 	include_user = TRUE
-	invocation = "RAC'WA NO!"
+	invocation = "BEASTMEN, AROO!"
 	invocation_type = "shout"
 	action_icon_state = "shapeshift"
 
@@ -97,8 +97,8 @@
 	human_req = initial(human_req)
 
 /obj/effect/proc_holder/spell/targeted/shapeshift/dragon
-	name = "Dragon Form"
-	desc = "Take on the shape a lesser ash drake."
+	name = "Wyvern Form"
+	desc = "Take on the shape a lesser Wyvern."
 	invocation = "RAAAAAAAAWR!"
 	convert_damage = FALSE
 

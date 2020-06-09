@@ -556,7 +556,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 	clothes_req = FALSE
 	charge_max = 100
 	cooldown_min = 50
-	invocation = "Victus sano!"
+	invocation = "Shallya aid me!"
 	invocation_type = "whisper"
 	school = "restoration"
 	sound = 'sound/magic/staff_healing.ogg'

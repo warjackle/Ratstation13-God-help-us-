@@ -48,7 +48,7 @@
 /obj/item/melee/touch_attack/disintegrate
 	name = "\improper smiting touch"
 	desc = "This hand of mine glows with an awesome power!"
-	catchphrase = "EI NATH!!"
+	catchphrase = "IT TELLS ME TO DEFEAT YOU!!"
 	on_use_sound = 'sound/magic/disintegrate.ogg'
 	icon_state = "disintegrate"
 	inhand_icon_state = "disintegrate"
@@ -87,7 +87,7 @@
 /obj/item/melee/touch_attack/fleshtostone
 	name = "\improper petrifying touch"
 	desc = "That's the bottom line, because flesh to stone said so!"
-	catchphrase = "STAUN EI!!"
+	catchphrase = "GHYRAN!!"
 	on_use_sound = 'sound/magic/fleshtostone.ogg'
 	icon_state = "fleshtostone"
 	inhand_icon_state = "fleshtostone"

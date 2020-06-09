@@ -4,7 +4,7 @@
 	school = "transmutation"
 	charge_max = 300
 	clothes_req = FALSE
-	invocation = "STI KALY"
+	invocation = "ULGU POOOWER!"
 	invocation_type = "whisper"
 	message = "<span class='notice'>Your eyes cry out in pain!</span>"
 	cooldown_min = 50 //12 deciseconds reduction per rank

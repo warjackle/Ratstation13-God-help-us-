@@ -1,5 +1,5 @@
 /obj/effect/proc_holder/spell/targeted/genetic
-	name = "Genetic"
+	name = "Tzeentch's curse"
 	desc = "This spell inflicts a set of mutations and disabilities upon the target."
 
 	var/list/active_on = list()

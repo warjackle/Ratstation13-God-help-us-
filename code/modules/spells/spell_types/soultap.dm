@@ -6,10 +6,10 @@
 
 /obj/effect/proc_holder/spell/self/tap
 	name = "Soul Tap"
-	desc = "Fuel your spells using your own soul!"
+	desc = "Fuel your spells using your own soul, a Dark spell!"
 	school = "necromancy" //i could see why this wouldn't be necromancy but messing with souls or whatever. ectomancy?
 	charge_max = 10
-	invocation = "AT ANY COST!"
+	invocation = "DARK WINDS HEAR ME!"
 	invocation_type = "shout"
 	level_max = 0
 	cooldown_min = 10

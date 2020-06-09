@@ -1,6 +1,6 @@
 /obj/structure/headpike
 	name = "spooky head on a spear"
-	desc = "When you really want to send a message."
+	desc = "Khorne Approved."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "headpike"
 	density = FALSE

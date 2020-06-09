@@ -1,5 +1,5 @@
 /obj/effect/proc_holder/spell/pointed/barnyardcurse
-	name = "Curse of the Barnyard"
+	name = "Curse of the Beastman"
 	desc = "This spell dooms an unlucky soul to possess the speech and facial attributes of a barnyard animal."
 	school = "transmutation"
 	charge_type = "recharge"
@@ -7,7 +7,7 @@
 	charge_counter = 0
 	clothes_req = FALSE
 	stat_allowed = FALSE
-	invocation = "KN'A FTAGHU, PUCK 'BTHNK!"
+	invocation = "GHUR WINDS, AFFLICTION!"
 	invocation_type = "shout"
 	range = 7
 	cooldown_min = 30
